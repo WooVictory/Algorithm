@@ -1,32 +1,37 @@
 package 자료구조.Stack;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.Scanner;
 import java.util.Stack;
 
 public class BOJ9012 {
-    public static void main(String[] args){
-        Scanner sc= new Scanner(System.in);
-        int test_case = sc.nextInt();
+    public static void main(String[] args) throws IOException {
+        Scanner sc = new Scanner(System.in);
+        BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
+
+        int test_case = Integer.parseInt(bf.readLine());
         sc.nextLine();
-        int left_count=0;
-        int right_count=0;
+        int left_count = 0;
+        int right_count = 0;
         Stack stack = new Stack();
-        for(int i=0;i<=test_case;i++){
+        for (int i = 0; i <= test_case; i++) {
             left_count = 0;
             right_count = 0;
-            String data = sc.nextLine();
-            for(int j=0;j<data.length();j++){
-                if(data.charAt(j) == '('){
+            String data = bf.readLine();
+            for (int j = 0; j < data.length(); j++) {
+                if (data.charAt(j) == '(') {
                     stack.push(data.charAt(j));
                     left_count++;
-                }else if(data.charAt(j) == ')'){
+                } else if (data.charAt(j) == ')') {
                     stack.push(data.charAt(j));
                     right_count++;
                 }
             }
-            if(left_count == right_count){
+            if (left_count == right_count) {
                 System.out.println("YES");
-            }else {
+            } else {
                 System.out.println("NO");
             }
             System.out.println(left_count);
