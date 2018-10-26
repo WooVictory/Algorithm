@@ -1,13 +1,13 @@
 package language;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.util.*;
 
 public class BOJ10815 {
     public static void main(String[] args) throws IOException {
         BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+
         int N = Integer.parseInt(bf.readLine()); // 상근이가 가지고 있는 카드의 갯수
         Set<Integer> set = new HashSet<>(); // 상근이가 가지고 있는 카드를 담을 Set 자료구조
         StringTokenizer st = new StringTokenizer(bf.readLine(), " ");
@@ -16,7 +16,8 @@ public class BOJ10815 {
         }
 
         int M = Integer.parseInt(bf.readLine());
-        StringTokenizer st2 = new StringTokenizer(bf.readLine(), " ");
+        // 객체 새로 할당!
+        st = new StringTokenizer(bf.readLine(), " ");
 
         /*FIXME
         * 여기서는 어차피 기존에 상근이가 가지고 있는 카드와
@@ -26,13 +27,17 @@ public class BOJ10815 {
         * */
         StringBuilder sb = new StringBuilder();
         for(int i=0;i<M;i++){
-            if(set.contains(Integer.parseInt(st2.nextToken()))){
+            if(set.contains(Integer.parseInt(st.nextToken()))){
                 sb.append(1+" ");
             }else {
                 sb.append(0+" ");
             }
         }
-        System.out.println(sb.toString());
+
+        bw.write(sb.toString()+"\n");
+        bw.flush();
+        bw.close();
+        bf.close();
 
 
 
