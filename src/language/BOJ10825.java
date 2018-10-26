@@ -28,7 +28,7 @@ public class BOJ10825 {
                     if (o1.english == o2.english) {
                         if (o1.math == o2.math) {
                             // 이름에 대해서는 오름차순 정렬으로!
-                            
+
                             return o1.name.compareTo(o2.name);
                         } else if (o1.math > o2.math) {
                             return -1;
