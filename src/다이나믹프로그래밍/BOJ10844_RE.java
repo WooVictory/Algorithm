@@ -5,6 +5,8 @@ import java.io.*;
 /**
  * created by victory_woo on 10/03/2019
  * DP : 쉬운 계단 수.
+ * 어려움.
+ * 다시 풀기.
  */
 public class BOJ10844_RE {
     private static long[][] dp = new long[101][11];
