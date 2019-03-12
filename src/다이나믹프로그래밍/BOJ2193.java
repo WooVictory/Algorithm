@@ -8,6 +8,7 @@ import java.io.*;
  * 76ms
  * N의 범위 주의하기!
  * int인지 long인지
+ * n번째 자리에 무엇이 올 것인지 결정하면서 풀면 된다.
  */
 public class BOJ2193 {
     private static long[] dp = new long[91];

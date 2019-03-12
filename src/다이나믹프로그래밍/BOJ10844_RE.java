@@ -7,6 +7,8 @@ import java.io.*;
  * DP : 쉬운 계단 수.
  * 어려움.
  * 다시 풀기.
+ * n번째 자리에 올 수 있는 수가 무엇인지
+ * 그리고 그 때 앞에 올 수 있는 수가 무엇인지 살펴봐야 한다.
  */
 public class BOJ10844_RE {
     private static long[][] dp = new long[101][11];

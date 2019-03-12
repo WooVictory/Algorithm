@@ -5,6 +5,8 @@ import java.io.*;
 /**
  * created by victory_woo on 11/03/2019
  * DP : 스티커
+ * n번째 열에 어떤 스티커의 상태가 올 수 있는지를 보고
+ * 그 때 앞에 올 수 있는 상태가 무엇인지를
  */
 public class BOJ9465 {
     private static final String NEW_LINE = "\n";

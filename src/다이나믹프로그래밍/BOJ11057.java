@@ -6,6 +6,7 @@ import java.io.*;
  * created by victory_woo on 10/03/2019
  * DP : 오르막수
  * 어려움. 다시 풀기.
+ * n-1번째 자리에 어떤 수가 올 수 있는지 고민하면서 풀면 된다.
  */
 public class BOJ11057 {
     private static long[][] dp = new long[1001][11];
