@@ -8,6 +8,7 @@ import java.io.*;
  * n 10억까지 가능
  * A=10, B=11, ... Z = 35
  * 아스키 코드표에서 대문자랑 55 차이남.
+ * 10진법을 B 진법으로
  */
 public class BOJ11005 {
     private static final int ASCII = 55;

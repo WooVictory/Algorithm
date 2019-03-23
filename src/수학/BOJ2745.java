@@ -5,6 +5,7 @@ import java.io.*;
 /**
  * created by victory_woo on 21/03/2019
  * 수학 : 진법변환
+ * B진법을 10진법으로
  */
 public class BOJ2745 {
 

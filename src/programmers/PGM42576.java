@@ -29,7 +29,7 @@ public class PGM42576 {
         String answer = "";
         String tmp = "";
 
-        // 정렬
+        // SelectSort
         Arrays.sort(participant);
         Arrays.sort(completion);
 

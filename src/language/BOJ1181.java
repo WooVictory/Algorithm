@@ -19,10 +19,10 @@ public class BOJ1181 {
 
         List<String> list = new ArrayList<>(set);
 
-        // 일단 사전순으로 먼저 정렬
+        // 일단 사전순으로 먼저 SelectSort
         Collections.sort(list);
 
-        // 길이순으로 정렬
+        // 길이순으로 SelectSort
         Collections.sort(list, new Comparator<String>() {
             @Override
             public int compare(String o1, String o2) {
