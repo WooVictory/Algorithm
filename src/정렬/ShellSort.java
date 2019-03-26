@@ -2,26 +2,36 @@ package 정렬;
 
 /**
  * created by victory_woo on 23/03/2019
- * 60000개 랜덤한 숫자를 쉘 정렬로 정렬한 경우 : 13 걸림
+ * 60000개 랜덤한 숫자를 쉘 정렬로 정렬한 경우 : 13 걸림.
+ * 100000개 랜덤한 숫자를 쉘 정렬로 정렬한 경우 : 22ms 걸림.
+ * 백만개 역순 정렬 = 72ms
+ * 백만개 랜덤 정렬 => 337ms 걸림.
  */
 public class ShellSort {
     public static void main(String[] args) {
         //int[] arr = {254, 3, 213, 64, 75, 56, 4, 324, 65, 78, 9, 5, 76, 3410, 8, 342, 76};
-        int[] arr = new int[60000];
+        int[] arr = new int[1000000];
         for (int i = 0; i < arr.length; i++) {
-            arr[i] = (int) (Math.random() * 60000);
+            arr[i] = (int) (Math.random() * 100000);
         }
+
+        /*int size = arr.length;
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = size--;
+        }*/
 
         long start = System.currentTimeMillis();
 
         shellSort(arr, arr.length);
         long end = System.currentTimeMillis();
-        System.out.println("삽입 정렬 정렬 시간 : " + (end - start));
+
 
 
         for (int i = 0; i < arr.length; i++) {
             System.out.println(arr[i]);
         }
+
+        System.out.println("쉘 정렬 정렬 시간 : " + (end - start));
 
     }
 
