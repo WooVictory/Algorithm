@@ -7,6 +7,7 @@ import java.io.*;
  * 정렬 : 수 정렬하기 3
  * 이 방식은 시간이 좀 오래 걸림.
  * 다른 풀이 보니까 정렬이 아닌 것 같음.
+ * 시간 : 2600ms 정도 걸림.
  */
 public class BOJ10989 {
     private static final String NEW_LINE = "\n";
