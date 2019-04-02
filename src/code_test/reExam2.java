@@ -14,10 +14,10 @@ public class reExam2 {
 
     public static int solution(int[] intArr) {
 
-        // 오름차순 정렬
-        // 하지만 나한테 필요한건 내림차순 정렬
+        // 오름차순 SelectSort
+        // 하지만 나한테 필요한건 내림차순 SelectSort
         Arrays.sort(intArr);
-        // 내림차순 정렬
+        // 내림차순 SelectSort
         for (int i = 0; i < intArr.length / 2; i++) {
             int temp = intArr[i];
             intArr[i] = intArr[intArr.length - i - 1];
