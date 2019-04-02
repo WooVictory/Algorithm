@@ -11,8 +11,7 @@ import java.util.ArrayList;
  * 버블 정렬을 이용해서 문제를 풀면 시간 초과가 뜬다.
  * 다른 접근 방식으로 해야 한다.
  * 버블 정렬의 과정을 이용해서 풀면 된다.
- *
- * 다음에 다시 풀어볼 것!
+ * 다시 한 번 풀어보기!!!
  */
 public class BOJ1377 {
     public static void main(String[] args) throws IOException {
