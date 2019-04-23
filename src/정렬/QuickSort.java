@@ -6,9 +6,9 @@ package 정렬;
  */
 public class QuickSort {
     public static void main(String[] args) {
-        //int[] arr = {254, 3, 213, 64, 75, 56, 4, 324, 65, 78, 9, 5, 3410, 8, 342, 76};
+        int[] arr = {254, 3, 213, 64, 75, 56, 4, 324, 65, 78, 9, 5, 3410, 8, 342, 76};
         //int[] arr = {69, 10, 30, 2, 16, 8, 31, 22};
-        int[] arr = {12, 9, 3, 2, 7, 5, 10, 6};
+        //int[] arr = {12, 9, 3, 2, 7, 5, 10, 6};
 
         quickSort(arr, 0, arr.length - 1);
 
@@ -62,6 +62,14 @@ public class QuickSort {
                 R--;
 
             }
+
+            /*if (L < R) {
+                temp = arr[L];
+                arr[L] = arr[R];
+                arr[R] = temp;
+                L++;
+                R--;
+            }*/
         }
 
 
