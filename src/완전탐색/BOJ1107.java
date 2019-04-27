@@ -8,6 +8,7 @@ import java.io.*;
  */
 public class BOJ1107 {
     private static boolean[] broken = new boolean[10];
+    // 0 ~ 500,000인 경우와 500,000 ~ 1,000,000인 경우 확인하기 위해서 범위를 늘린다.
     private static final int MAX = 1000000;
 
     public static void main(String[] args) throws IOException {
