@@ -40,10 +40,10 @@ public class BOJ9663 {
                 if (isPossible(column, row + 1)) {
                     // 3. 서브 트리로 이동.(해당 노드의 하위 노드)
                     dfs(column, row + 1);
-                }else {
+                } else {
                     // 4. 백트래킹 수행. 해당 노드는 가지치기 됨.
                     // 아니면 백트래킹. 0이면 퀸을 못놓는다는 의미.
-                    column[row+1] = 0;
+                    column[row + 1] = -1;
                 }
             }
         }
