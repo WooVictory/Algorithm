@@ -8,6 +8,7 @@ import java.io.InputStreamReader;
 /**
  * created by victory_woo on 24/05/2019
  * 완탐 : 부분 순열의 합
+ * 다시 풀어보자!
  */
 public class BOJ1182 {
     private static int[] arr;

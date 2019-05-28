@@ -9,6 +9,7 @@ import java.io.InputStreamReader;
  * created by victory_woo on 23/05/2019
  * 완탐 : 알파벳
  * 굳이 visited 배열을 만들 필요가 없다.
+ * check 배열을 통해 알파벳을 인덱스처럼 관리하기 때문이다.
  */
 public class BOJ1987 {
     private static final int ASCII = 65;
