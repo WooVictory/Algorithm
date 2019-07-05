@@ -35,12 +35,12 @@ public class BOJ1261 {
 
         bfs(0, 0);
         System.out.println(distance[N - 1][M - 1]);
-        /*for (int i = 0; i < N; i++) {
+        for (int i = 0; i < N; i++) {
             for (int j = 0; j < M; j++) {
                 System.out.print(distance[i][j] + " ");
             }
             System.out.println();
-        }*/
+        }
     }
 
     /*
