@@ -42,6 +42,8 @@ public class sw13460 {
                 }
             }
         }
+        System.out.println(rx+", "+ry);
+        System.out.println(bx+", "+by);
 
         bfs();
         System.out.println(result);
@@ -64,6 +66,7 @@ public class sw13460 {
             if (node.count > 10) {
                 result = -1;
                 continue;
+
             }
 
             // 파란 공이 구멍에 도착하면 실패.O
