@@ -8,11 +8,12 @@ public class SelectSort {
     public static void main(String[] args) {
         //int[] arr = {254, 3, 213, 64, 75, 56, 4, 324, 65, 78, 9, 5, 76, 3410, 8, 342, 76};
 
-        int[] arr = new int[60000];
+        //int[] arr = new int[60000];
+        int[] arr = {7, 6, 5, 4, 1};
 
-        for (int i = 0; i < arr.length; i++) {
+        /*for (int i = 0; i < arr.length; i++) {
             arr[i] = (int) (Math.random() * 60000);
-        }
+        }*/
 
         long start_time = System.currentTimeMillis();
         // SelectSort
@@ -32,9 +33,17 @@ public class SelectSort {
                     arr[j] = arr[i];
                     arr[i] = tmp;
                 }
+                //printMap(arr);
             }
         }
 
+    }
+
+    private static void printMap(int[] arr) {
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
+        }
+        System.out.println();
     }
 
 

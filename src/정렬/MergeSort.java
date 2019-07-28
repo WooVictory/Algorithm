@@ -68,16 +68,17 @@ public class MergeSort {
         }
 
         // 남아 있는 값들을 일괄 복사한다.
-        if (mid < i) {
+        if (mid < i) { // 남아 있는 값의 왼쪽을 일괄 복사한다.
             for (l = j; l <= right; l++) {
                 sorted[k++] = arr[l];
             }
-        } else {
+        } else { // 남아 있는 값의 오른쪽을 일괄 복사한다.
             for (l = i; l <= mid; l++) {
                 sorted[k++] = arr[l];
             }
         }
 
+        // 정렬된 복사본 배열을 원본 배열에 넣는다.
         for (l = left; l <= right; l++) {
             arr[l] = sorted[l];
         }
