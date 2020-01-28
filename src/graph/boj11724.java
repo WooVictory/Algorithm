@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.LinkedList;
 
 /**
  * created by victory_woo on 2020/01/26
@@ -38,12 +39,30 @@ public class boj11724 {
         // dfs.
         for (int i = 1; i <= n; i++) {
             if (!visit[i]) {
-                dfs(i);
+                //dfs(i);
+                bfs(i);
                 count++;
             }
         }
 
         System.out.println(count);
+    }
+
+    private static void bfs(int v) {
+        LinkedList<Integer> q = new LinkedList<>();
+        q.add(v);
+        visit[v] = true;
+
+        while (!q.isEmpty()) {
+            int x = q.remove();
+
+            for (int y : a[x]) {
+                if (!visit[y]) {
+                    visit[y] = true;
+                    q.add(y);
+                }
+            }
+        }
     }
 
     private static void dfs(int v) {
