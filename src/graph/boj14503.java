@@ -68,7 +68,6 @@ public class boj14503 {
                     q.add(new Node(nextX, nextY, currentD));
                     visit[nextX][nextY] = true;
                     a[nextX][nextY] = 9;
-                    cost++;
                     isClean = true;
                     break;
                     // 한번에 한 방향 즉, 왼쪽으로 돌았을 경우만 탐색하면 되기 때문에 4번의 경우를 다 돌 필요는 없다.
