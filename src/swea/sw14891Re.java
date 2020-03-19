@@ -10,6 +10,8 @@ import java.util.LinkedList;
  * 톱니바퀴.
  * 삼성 기출.
  * 시뮬레이션.
+ * N극 : 0
+ * S극 : 1
  */
 public class sw14891Re {
     // LinkedList 타입의 배열. 4개의 톱니바퀴를 관리한다.
@@ -27,10 +29,11 @@ public class sw14891Re {
         }
 
         int k = toInt(br.readLine());
+        // 회전시킬 횟수.
         while (k-- > 0) {
             String[] in = br.readLine().split(" ");
-            int n = toInt(in[0]);
-            int d = toInt(in[1]);
+            int n = toInt(in[0]); // 톱니바퀴 번호.
+            int d = toInt(in[1]); // 방향.
 
             left(n - 1, -d); // n번 톱니바퀴의 왼쪽을 확인한다.
             right(n + 1, -d); // n번 톱니바퀴의 오른쪽을 확인한다.
