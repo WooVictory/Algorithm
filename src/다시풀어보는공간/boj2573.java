@@ -91,11 +91,30 @@ public class boj2573 {
                 // 해당 정점이 얼음이 아닌 빙산이고 방문한 적이 없을 때만 탐색.
                 if (map[i][j] != 0 && !visit[i][j]) {
                     count++;
-                    bfs(i, j);
+                    //bfs(i, j);
+                    dfs(i, j);
                 }
             }
         }
         return count;
+    }
+
+    private static void dfs(int x, int y) {
+        if (visit[x][y]) return;
+        visit[x][y] = true;
+
+        for (int i = 0; i < 4; i++) {
+            int nx = x + dx[i];
+            int ny = y + dy[i];
+
+
+            if (nx < 0 || ny < 0 || nx >= n || ny >= m) continue;
+
+            // 방문한 적이 없고, 해당 정점이 얼음이 아닌 빙산인 경우에만 탐색.
+            if (!visit[nx][ny] && map[nx][ny] != 0) {
+                dfs(nx, ny);
+            }
+        }
     }
 
     // 일반적인 bfs 탐색.
