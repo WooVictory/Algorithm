@@ -35,6 +35,8 @@ public class PGM42840 {
             int[] p = person[i];
             int len = p.length;
             int count = 0;
+            // 정답의 길이만큼 돌면서 정답의 길이가 수포자의 찍는 방식의 길이보다 훨씬 클 수 있기 때문에
+            // 수포자의 찍는 방법의 길이만큼 mod 계산을 통하여 인덱스를 구한다.
             for (int j = 0; j < answers.length; j++) {
                 int num = j % len;
                 if (answers[j] == p[num]) count++;
