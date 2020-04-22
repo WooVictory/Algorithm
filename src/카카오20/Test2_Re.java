@@ -18,13 +18,12 @@ public class Test2_Re {
         System.out.println(solution(key, lock));
 
 
-        String a = "AmenA";
-        String b = "menA";
-        System.out.println(a.replace("A","Super"));
-        System.out.println(a.replaceFirst("A","Super"));
-        System.out.println(b.replaceFirst("A","Super"));
+    }
+
+    private static void sample(){
 
     }
+
 
     private static int centerStartIndex, centerEndIndex;
 
