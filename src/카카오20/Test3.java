@@ -4,6 +4,8 @@ import java.util.Stack;
 
 /**
  * created by victory_woo on 2020/04/22
+ * 카카오 20 기출.
+ * 괄호 변환.
  */
 public class Test3 {
     public static void main(String[] args) {
