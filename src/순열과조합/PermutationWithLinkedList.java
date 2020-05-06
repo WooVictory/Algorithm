@@ -10,7 +10,7 @@ import java.util.LinkedList;
  */
 public class PermutationWithLinkedList {
     private static LinkedList<Integer> list;
-    private static int[] check;
+    private static boolean[] check;
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -19,8 +19,8 @@ public class PermutationWithLinkedList {
         int r = Integer.parseInt(in[1]);
 
         list = new LinkedList<>();
-        check = new int[n + 1];
-        //permutation(n, r);
+        check = new boolean[n + 1];
+        permutation(n, r);
         rePermutation(n, r);
     }
 
@@ -33,11 +33,11 @@ public class PermutationWithLinkedList {
         }
 
         for (int i = 1; i <= n; i++) {
-            if (check[i] == 0) {
+            if (!check[i]) {
+                check[i] = true;
                 list.add(i);
-                check[i] = 1;
                 permutation(n, r);
-                check[i] = 0;
+                check[i] = false;
                 list.removeLast();
             }
         }
