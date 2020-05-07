@@ -126,7 +126,7 @@ public class Test7_4 {
                     "index=" + index +
                     ", basic=" + basic +
                     ", link=" + link +
-                    ", score=" + score +
+                    ", rate=" + score +
                     '}';
         }
     }
