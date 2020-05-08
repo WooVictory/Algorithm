@@ -60,6 +60,14 @@ public class Test2_Re {
                         x++;
                     }
 
+                    /*for (int k = i; k < keyLength + i; k++) {
+                        for (int l = j; l < keyLength + j; l++) {
+                            System.out.print(expandedLock[k][l]+" ");
+                        }
+                        System.out.println();
+                    }
+                    System.out.println();*/
+
                     // expandedLock 배열과 key 배열을 맞춰본 뒤, 열쇠가 자물쇠의 홈과 모두 맞물리는지 확인한다.
                     // 열쇠로 자물쇠를 열 수 있으면 true 반환하면서 종료한다.
                     if (isFit(expandedLock)) return true;
@@ -100,6 +108,14 @@ public class Test2_Re {
             }
             x++;
         }
+
+        for (int i=0;i<copy.length;i++){
+            for (int j=0;j<copy.length;j++){
+                System.out.print(copy[i][j]+" ");
+            }
+            System.out.println();
+        }
+        System.out.println();
 
         return copy;
     }

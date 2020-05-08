@@ -2,6 +2,9 @@ package 카카오18;
 
 /**
  * created by victory_woo on 2020/05/06
+ * 카카오 18 기출.
+ * 다시 푸는 중.
+ * 추석 트래픽.
  */
 public class RE_Test7 {
     public static void main(String[] args) {
