@@ -25,6 +25,7 @@ public class Combination {
 
     }
 
+    // 중복을 허용 X 조합.
     private static void combination(int n, int r, int index, int target) {
         if (r == 0) {
             print();
@@ -38,7 +39,7 @@ public class Combination {
         combination(n, r, index, target + 1); // 안뽑는 경우.
     }
 
-
+    // 중복을 허용 O 조합.
     private static void reCombination(int n, int r, int index, int target) {
         if (r == 0) {
             print();

@@ -21,7 +21,7 @@ public class PermutationWithLinkedList {
         list = new LinkedList<>();
         check = new boolean[n + 1];
         permutation(n, r);
-        rePermutation(n, r);
+        //rePermutation(n, r);
     }
 
     // n개 중 r개를 뽑는 순열.(중복 X)
