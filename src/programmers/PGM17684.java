@@ -59,7 +59,10 @@ public class PGM17684 {
 
         // 리스트를 배열에 담아서 반환한다.
         answer = new int[result.size()];
-        for (int i = 0; i < answer.length; i++) answer[i] = result.get(i);
+        for (int i = 0; i < answer.length; i++) {
+            answer[i] = result.get(i);
+            System.out.println(answer[i]);
+        }
 
         return answer;
     }
